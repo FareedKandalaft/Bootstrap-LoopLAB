@@ -14,7 +14,7 @@
         <title>LoopLab</title>
     </head>
 
-    <body dsts-spy="scroll" data-target="#main-nav" id="home">
+    <body data-spy="scroll" data-target="#main-nav" id="home">
     <!-- NAV BAR-->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="main-nav">
           <div class="container">
@@ -299,13 +299,13 @@
            if(this.hash !== ""){
                event.preventDefault();
                const hash = this.hash;
-               $('html, body'.).animate({
-                   scrollTop: $(hash).offset().top},
-                    800, function() {
+               $('html, body').animate({
+                   scrollTop: $(hash).offset().top
+                    }, 800, function() {
                     window.location.hash = hash;
-               })
-           }
-        });
+               });
+             }
+         });
         
         </script>
     </body>
